@@ -1,0 +1,407 @@
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+ 
+}
+
+:root{
+    --bg-color: black;
+    --second-bg-color: #1a1a1a; 
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #815328;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+body{
+    min-height: 100vh;
+    background: black;
+    color: white;
+}
+
+/*** HEADER ***/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(black, #000000, transparent) ;
+    z-index: 1;
+
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+   
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+
+}
+
+header ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+/*** HOME ***/
+#home{
+    padding: 165px 8% 120px;
+}
+
+.home-text{
+    position: absolute;
+    bottom: 8%;  
+}
+
+.home-text p{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.home-text h1{
+    font-size: 110px;
+    line-height: 140px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;   
+}
+
+.home-text h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.home-text .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.home-text a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+}
+
+/*** ABOUT ***/
+#about{
+    padding-top: 35%;
+    padding-left: 13%;
+}
+
+.about-text h1{
+    font-size: 50px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff; 
+}
+
+.about-text h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#about .about-text{
+    display: flex;
+}
+.about-text .left{
+    width: 50%;
+    padding-top: 20px;
+}
+
+.about-text .left h1{
+    line-height: 100px;
+
+}
+
+.about-text .left h2{
+    line-height: 3.5rem;
+
+}
+
+.about-text .right{
+    position: relative;
+    width: 49%;
+    padding-right: 100px;
+    line-height: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about .anchor{
+    display: block;
+    height: 150px; /*same height as header*/
+    margin-top: -150px; /*same height as header*/
+    visibility: hidden;
+  }
+
+  /*** WORKS ***/
+  #works{
+    padding-top: 13%;
+    padding-left: 13%;
+}
+
+.works-text h1{
+    font-size: 50px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff; 
+}
+
+.works-text h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.works-text .head{
+    width: 50%;
+    padding-top: 20px;
+}
+
+.works-text .head h1{
+    line-height: 100px;
+
+}
+
+.works-text .head h2{
+    line-height: 3.5rem;
+
+}
+
+.works .anchor{
+    display: block;
+    height: 150px; /*same height as header*/
+    margin-top: -150px; /*same height as header*/
+    visibility: hidden;
+  }
+
+#works .content{
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+
+.works-text img{
+    width: 500px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+#works .content .left{
+    width: 50%;
+
+}
+
+#works .content .right{
+    position: relative;
+    width: 49%;
+    padding-top: 15px;
+    padding-right: 100px;
+    line-height: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#works .content1{
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+#works .content1 .left{
+    position: relative;
+    width: 49%;
+    padding-top: 15px;
+    padding-right: 100px;
+    line-height: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+#works .content1 .right{
+    width: 50%;
+}
+
+#works .content .left .text{
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+}
+
+#works .content .left span{
+    position: relative;
+    bottom: 10px;
+    right: 3px;
+}  
+
+#works .content1 .right .text{
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+}
+
+#works .content1 .right span{
+    position: relative;
+    bottom: 10px;
+    right: 5px;
+}
+
+#works .anchor{
+    display: block;
+    height: 150px; /*same height as header*/
+    margin-top: -150px; /*same height as header*/
+    visibility: hidden;
+  }
+
+/*** CONTACT FORM ***/
+
+#contact{
+    padding-top: 13%;
+    padding-left: 13%;
+}
+
+.contact-text{
+    height: 500px;
+
+}
+
+.contact-text .content{
+    display: flex;
+}
+
+.contact-text h1{
+    font-size: 50px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff; 
+    margin-bottom: 20px;
+}
+
+.hero{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+}
+
+.form-label{
+    margin-bottom: 20px;
+}
+.form-label span{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.form{
+    background: black;
+    width: 500px;
+    padding: 30px;
+    font-size: 18px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input{
+    height: 25px;
+}
+
+textarea{
+    padding-top: 3px;
+}
+
+input, textarea{
+    background-color: black;
+    width: 300px;
+    border: 1px solid white;
+    outline: none;
+    margin-bottom: 25px;
+    padding-left: 5px;
+    color: white;
+}
+
+.send-btn{
+    width: 120px;
+    border: none;
+    color: white;
+    border: 2px solid #fff;
+    font-size: 16px;
+    padding: 0;
+}
+
+
+.contact-text img{
+    max-width: 90px;
+    max-height: 90px;
+    padding: 5px;
+}
+
+.contact-text h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: -7px;
+}
+
+.contact-text .head{
+    width: 50%;
+    padding-bottom: 20px;
+}
+.contact-text .head h2{
+    line-height: 3.5rem;
+
+}
+
+#contact .anchor{
+    display: block;
+    height: 150px; /*same height as header*/
+    margin-top: -150px; /*same height as header*/
+    visibility: hidden;
+  }
